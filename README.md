@@ -4,3 +4,7 @@
 
 - `bun i`
 - `bun run dev`
+
+## Licence
+
+todo
