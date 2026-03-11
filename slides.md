@@ -24,15 +24,28 @@ Bikepacking Stammtisch Bonn 3/26 @bitcircus101
 
 ---
 layout: image-right
-image: https://cover.sli.dev
+image: ./public/strava_heat.png
 ---
+
 # Agenda
 
+- Hintergrundinfos Digitale Karten
+- Kartenvergleich --> Linksammlung
+- Digitale Höhenmodelle
+- Digitale Orthophotos
 - Karten fürs Bikepacking
-- Höhenmodelle
-- Open Data
-- OSM
-- Quiz
+- OSM Contribution
+- Mobile GIS
+- Advanced Routing QGIS
+
+<div class="absolute right-20px bottom-5px">
+  Strava heatmaps
+</div>
+
+## Brainstorming 🤯 
+- `Perfekte` Bikepacking Map
+- Unterstüzung der Community (ADFC, weitere?)
+
 
 ---
 layout: default
@@ -69,10 +82,38 @@ Proprietär
 </div>
 </div>
 
+
 ---
 layout: iframe
 url: ./snippets/map.html
 ---
+
+---
+layout: two-cols-header
+---
+# Digitales Geländemodell
+::left::
+- Basiert auf LiDAR Daten
+- Sehr hohe Auflösung (10cm-1m)
+- Regelmäßige Datenerhebung
+- Open Data in vielen Bundesländern und europäischen Nachbarländern
+- Hydrologie, Infrastruktur, Bausektor, Archäologie, Tourismus
+
+[read more](https://gdz.bkg.bund.de/index.php/default/digitale-geodaten/digitale-gelandemodelle.html)
+
+
+## 🎮 Demo
+
+::right::
+
+
+<img style="height:200px" src="./dgm1.gif"></img>
+
+<img style="height:200px" src="./dgm2.png"></img>
+
+<div class="absolute right-20px bottom-5px">
+  Bezirksregierung Köln
+</div>
 
 
 ---
@@ -89,26 +130,62 @@ url: ./snippets/elevation_chart_lescun.html
 ---
 layout: two-cols-header
 ---
-# Digitales Geländemodell
+# Digitale Orthophotos (DOP)
 ::left::
-- Basiert auf LiDAR Daten
-- Sehr hohe Auflösung (20cm-1m)
+- Verzerrungsfreie, georeferenzierte Luftbilder
+- Sehr hohe Auflösung (5cm - 20cm)
 - Regelmäßige Datenerhebung
 - Open Data in vielen Bundesländern und europäischen Nachbarländern
-- Hydrologie, Bausektor, Archäologie, ..
+- Planungsgrundlage (z. B. im Straßenbau, im Umweltschutz und in der Land- und Forstwirtschaft)
+- Beweissicherung im Schadensfall (z. B. bei Naturereignissen)
+- [read more](https://www.bezreg-koeln.nrw.de/geobasis-nrw/produkte-und-dienste/luftbild-und-satellitenbildinformationen/aktuelle-luftbild-und-0)
 
 ::right::
-![](./dgm1.png)
-![](./dgm2.png)
+
+
+<img style="height:200px" src="./dop1.png"></img>
+<img style="height:200px" src="./dop2.png"></img>
+
+<div class="absolute right-20px bottom-5px">
+  Bezirksregierung Köln
+</div>
 
 ---
 layout: iframe
-url: https://www.komoot.com/de-de/plan/@50.5412725,6.9729722,15.444z
+url: https://www.tim-online.nrw.de/tim-online2/?bg=dop&bbox=332790,5646151,338740,5649341&center=335765,5647746&frame=true&wms=https://www.wms.nrw.de/geobasis/wms-t_nw_hist_dop,nw_hist_dop&time=1970
 ---
-# Komoot
 
-# osm
 
-## https://wiki.openstreetmap.org/wiki/DE:Tag:amenity%3Dbicycle_repair_station
+---
+layout: center
+---
+# Demo Mobile GIS
 
-# dop20 beispiele
+---
+layout: center
+---
+# Demo Advanced Routing 🗺️
+
+---
+layout: image-right
+image: ./public/osmedit.png
+backgroundSize: 80%
+---
+# Contribute
+
+- Kartenfehler melden
+- Fehlende Infos eintragen
+- [Guide](https://learnosm.org/en/beginner/)
+- https://heigit.org/a-basic-guide-to-osm-data-filtering/
+
+
+# Follow-Ups
+- `Perfekte` Bikepacking Map 😎
+
+---
+layout: image-right
+image: ./public/analog_map.png
+---
+# Danke
+Slides: https://github.com/hblitza/bikepacking-bonn-maps  
+👦 Hannes hannes.blitza@posteo.de
