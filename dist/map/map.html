@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Shared Views</title>
+        <style>
+            .map {
+                width: 100%;
+                height: 400px;
+            }
+
+            @media (min-width: 800px) {
+                .wrapper {
+                    display: flex;
+                }
+
+                .half {
+                    padding: 0 10px;
+                    width: 50%;
+                    float: left;
+                }
+            }
+        </style>
+      <script type="module" crossorigin src="/assets/map-jOVyVtxV.js"></script>
+      <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
+      <link rel="stylesheet" crossorigin href="/assets/map-BtPuoxOl.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="half">
+                <select id="layerSelect1">
+                    <option value="osm">OSM</option>
+                    <option value="opentopomap">OpenTopoMap</option>
+                    <option value="cyclOsm">cyclOSM</option>
+                    <option value="dop">DOP</option>
+                    <option value="dopCir">DOP CIR</option>
+                </select>
+                <div id="map1" class="map"></div>
+            </div>
+            <div class="half">
+                <select id="layerSelect2">
+                    <option value="osm">OSM</option>
+                    <option value="opentopomap" selected>OpenTopoMap</option>
+                    <option value="cyclOsm">cyclOSM</option>
+                    <option value="dop">DOP</option>
+                    <option value="dopCir">DOP CIR</option>
+                </select>
+                <div id="map2" class="map"></div>
+            </div>
+        </div>
+
+    </body>
+</html>
