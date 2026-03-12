@@ -16,6 +16,7 @@ comark: true
 # duration of the presentation
 layout: cover
 background: /dgm.png
+base: '/bikepacking-bonn-maps/',
 ---
 
 # All eyes on maps
@@ -45,8 +46,6 @@ image: /strava_heat.png
 ## Brainstorming 🤯 
 - `Perfekte` Bikepacking Map
 - Unterstüzung der Community (ADFC, weitere?)
-
-
 ---
 layout: default
 ---
@@ -74,15 +73,11 @@ Amtliche Daten
 <div>
 
 Proprietär
-
-
 ![alt text](/image-3.png)
 
 - Hochauflösende Satellitenkarten (Komoot Satellite), Street View, Gewerbliche Infos (z.B. Speisekarte Bistro)
 </div>
 </div>
-
-
 ---
 layout: iframe
 url: /map/map.html
@@ -101,11 +96,9 @@ layout: two-cols-header
 
 [read more](https://gdz.bkg.bund.de/index.php/default/digitale-geodaten/digitale-gelandemodelle.html)
 
-
 ## 🎮 Demo
 
 ::right::
-
 
 <img style="height:200px" src="/dgm1.gif"></img>
 
@@ -114,14 +107,11 @@ layout: two-cols-header
 <div class="absolute right-20px bottom-5px">
   Bezirksregierung Köln
 </div>
-
-
 ---
 layout: iframe
-url: /elevation_chart.html
+url: /elevation_chart_kall.html
 ---
 # Elevation Profiles
-
 ---
 layout: iframe
 url: /elevation_chart_lescun.html
