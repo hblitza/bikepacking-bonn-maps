@@ -57,7 +57,7 @@ layout: default
 
 Crowdsource
 
-![alt text](./Openstreetmap_logo.svg)
+![alt text](/Openstreetmap_logo.svg)
 
 - Open Cycle Map, Komoot Standard
 https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services
@@ -66,7 +66,7 @@ https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services
 
 Amtliche Daten
 
-![alt text](./image-1.png)
+![alt text](/image-1.png)
 
 - Topographische Karten, Höhenmodelle (DGM), Orthophotos (DOP), Kataster, 3D Karten
 
@@ -76,7 +76,7 @@ Amtliche Daten
 Proprietär
 
 
-![alt text](./image-3.png)
+![alt text](/image-3.png)
 
 - Hochauflösende Satellitenkarten (Komoot Satellite), Street View, Gewerbliche Infos (z.B. Speisekarte Bistro)
 </div>
@@ -85,7 +85,7 @@ Proprietär
 
 ---
 layout: iframe
-url: ./snippets/map.html
+url: /map/map.html
 ---
 
 ---
@@ -107,9 +107,9 @@ layout: two-cols-header
 ::right::
 
 
-<img style="height:200px" src="./dgm1.gif"></img>
+<img style="height:200px" src="/dgm1.gif"></img>
 
-<img style="height:200px" src="./dgm2.png"></img>
+<img style="height:200px" src="/dgm2.png"></img>
 
 <div class="absolute right-20px bottom-5px">
   Bezirksregierung Köln
@@ -118,13 +118,13 @@ layout: two-cols-header
 
 ---
 layout: iframe
-url: ./snippets/elevation_chart.html
+url: /elevation_chart.html
 ---
 # Elevation Profiles
 
 ---
 layout: iframe
-url: ./snippets/elevation_chart_lescun.html
+url: /elevation_chart_lescun.html
 ---
 
 ---
@@ -143,8 +143,8 @@ layout: two-cols-header
 ::right::
 
 
-<img style="height:200px" src="./dop1.png"></img>
-<img style="height:200px" src="./dop2.png"></img>
+<img style="height:200px" src="/dop1.png"></img>
+<img style="height:200px" src="/dop2.png"></img>
 
 <div class="absolute right-20px bottom-5px">
   Bezirksregierung Köln
@@ -191,4 +191,4 @@ image: https://cover.sli.dev
 https://github.com/hblitza/bikepacking-bonn-maps (ab Freitag)
 
 ## Fragen
-Jetzt oder später im Chat oder an hannes.blitza@posteo.de
+Jetzt oder später im Chat.
