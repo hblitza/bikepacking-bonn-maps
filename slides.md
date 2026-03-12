@@ -24,7 +24,7 @@ Bikepacking Stammtisch Bonn 3/26 @bitcircus101
 
 ---
 layout: image-right
-image: ./public/strava_heat.png
+image: /strava_heat.png
 ---
 
 # Agenda
@@ -168,7 +168,7 @@ layout: center
 
 ---
 layout: image-right
-image: ./public/osmedit.png
+image: /osmedit.png
 backgroundSize: 80%
 ---
 # Contribute
@@ -184,8 +184,11 @@ backgroundSize: 80%
 
 ---
 layout: image-right
-image: ./public/analog_map.png
+image: https://cover.sli.dev
 ---
 # Danke
-Slides: https://github.com/hblitza/bikepacking-bonn-maps  
-👦 Hannes hannes.blitza@posteo.de
+## Slides
+https://github.com/hblitza/bikepacking-bonn-maps (ab Freitag)
+
+## Fragen
+Jetzt oder später im Chat oder an hannes.blitza@posteo.de

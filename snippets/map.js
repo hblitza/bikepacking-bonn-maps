@@ -1,28 +1,14 @@
-import Map from "ol/Map.js";
-import View from "ol/View.js";
-import ImageLayer from "ol/layer/Image";
-import TileLayer from "ol/layer/Tile.js";
-import { ImageWMS, OSM, TileWMS, XYZ } from "ol/source";
 import ImageTile from "ol/source/ImageTile.js";
-import { register } from "ol/proj/proj4.js";
-import proj4 from "proj4";
+import Map from "ol/Map.js";
+import { OSM, TileWMS } from "ol/source";
+import TileLayer from "ol/layer/Tile.js";
+import View from "ol/View.js";
 
-const key = "XXHXgbVEutyuM6ludtzM";
-const attributions =
-  '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> ' +
-  '<a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>';
+import proj4 from "proj4";
+import { register } from "ol/proj/proj4.js";
 
 const osm = new TileLayer({
   source: new OSM(),
-});
-
-const outdoor = new TileLayer({
-  source: new ImageTile({
-    attributions: attributions,
-    url: "https://api.maptiler.com/maps/outdoor-v4/{z}/{x}/{y}.png?key=" + key,
-    tileSize: 512,
-    maxZoom: 22,
-  }),
 });
 
 const opentopomap = new TileLayer({
@@ -41,18 +27,9 @@ const cyclOsm = new TileLayer({
   }),
 });
 
-const aerialLayer = new TileLayer({
-  source: new ImageTile({
-    attributions: attributions,
-    url: "https://api.maptiler.com/maps/satellite/{z}/{x}/{y}.jpg?key=" + key,
-    tileSize: 512,
-    maxZoom: 20,
-  }),
-});
-
 const dop = new TileLayer({
   source: new TileWMS({
-    attributions: attributions,
+    attributions: "© Bezirksregierung Köln. Datenlizenz Deutschland – Zero",
     params: { LAYERS: "nw_dop_rgb", TILED: true },
     url: "https://www.wms.nrw.de/geobasis/wms_nw_dop?service=WMS",
     tileSize: 512,
@@ -61,7 +38,7 @@ const dop = new TileLayer({
 
 const dopCir = new TileLayer({
   source: new TileWMS({
-    attributions: attributions,
+    attributions: "© Bezirksregierung Köln. Datenlizenz Deutschland – Zero",
     params: { LAYERS: "nw_dop_cir", TILED: true },
     url: "https://www.wms.nrw.de/geobasis/wms_nw_dop?service=WMS",
     tileSize: 512,
@@ -101,19 +78,13 @@ const layerMap = {
   dop,
   dopCir,
   cyclOsm,
-  outdoor,
 };
 
 function update(evt) {
   const map = evt.target.id === "layerSelect1" ? map1 : map2;
   const layer = layerMap[evt.target.value];
   if (layer) map.setLayers([layer]);
-}
+};
+
 map1Selector.addEventListener("change", update);
 map2Selector.addEventListener("change", update);
-
-// window.onload = (event) => {
-
-//     selectButton.addEventListener('change', (evt) => {
-//     });
-// };
